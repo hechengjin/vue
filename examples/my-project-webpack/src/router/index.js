@@ -8,6 +8,10 @@ export default new Router({
   routes: [
     {
       path: '/',
+      component: resolve => require(['../views/example/mock/mockTest.vue'], resolve)
+    },
+    {
+      path: '/hello',
       name: 'Hello',
       component: Hello
     }
